@@ -45,12 +45,12 @@ public without sharing virtual class CronExpressionBuilder {
         return this;
     }
     public virtual CronExpressionBuilder setMonthName(string monthAbbr){
-        cronExpressionMap.put('Day_of_week', monthAbbr);
+        cronExpressionMap.put('Month', monthAbbr);
         return this;
     }
 
     public virtual CronExpressionBuilder setDayOfWeek(integer dayOfWeek){
-        cronExpressionMap.put('Seconds', String.valueOf(dayOfWeek));
+        cronExpressionMap.put('Day_of_week', String.valueOf(dayOfWeek));
         return this;
     }
     public virtual CronExpressionBuilder setOptionalYear(integer optionalYear){
